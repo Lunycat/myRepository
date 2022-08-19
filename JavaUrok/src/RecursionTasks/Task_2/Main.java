@@ -2,15 +2,13 @@ package RecursionTasks.Task_2;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(recursion(1, -4));
+        // Идём от "a" до "b"
+        System.out.println(recursion(1, 10));
     }
-
+    // Рекурсия по выводу цифр от "a" до "b"
     public static String recursion(int a, int b) {
-        if (a < b) {
-            return a + " " +  recursion(a + 1, b);
-        } else {
-            if (a == b) return Integer.toString(a);
-            return a + " " + recursion(a - 1, b);
-        }
+        if (a < b) return a + " " + recursion(a + 1, b);
+        if (a > b) return a + " " + recursion(a - 1, b);
+        return Integer.toString(a);
     }
 }
