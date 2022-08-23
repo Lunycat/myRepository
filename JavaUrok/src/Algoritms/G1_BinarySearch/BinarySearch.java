@@ -1,6 +1,6 @@
 package Algoritms.G1_BinarySearch;
 
-public class Main {
+public class BinarySearch {
     public static void main(String[] args) {
         int[] array = {3, 11, 24, 26, 38, 41, 44, 49, 52, 61, 67, 69, 72};
         System.out.println(binarySearch(array, 52));
