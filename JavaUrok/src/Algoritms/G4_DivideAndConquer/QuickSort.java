@@ -1,8 +1,8 @@
 package Algoritms.G4_DivideAndConquer;
 
-public class FastSort {
+public class QuickSort {
     public static void main(String[] args) {
-        int[] array = {8, 3, 5, 6, 4};
+        int[] array = {8, 12, 11, 2, 5, 7, 4};
 
         quickSort(array, 0, array.length-1);
 

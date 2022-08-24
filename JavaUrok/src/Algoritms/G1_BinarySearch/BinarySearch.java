@@ -7,8 +7,7 @@ public class BinarySearch {
     }
 
     public static int binarySearch(int[] array, int item) {
-        // Представим, что наш массив уже отсортирован
-        // Индекс наименьшего элемента
+        // Представим, что наш массив уже отсортирован, "low" индекс наименьшего элемента
         int low = 0;
         // Индекс наибольшего элемента
         int high = array.length - 1;
