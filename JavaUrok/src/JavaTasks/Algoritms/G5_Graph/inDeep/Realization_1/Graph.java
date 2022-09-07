@@ -2,14 +2,14 @@ package JavaTasks.Algoritms.G5_Graph.inDeep.Realization_1;
 
 public class Graph {
     private Vertex vertexList[]; // создаём массив типа Vertex
-    private int maxN = 10; // максимальное количество графов
     private int curN; // текущий номер графа
     private int[][] mas; // матрица смежности
-    private myStack stack = new myStack();
+    private myStack stack;
 
     public Graph() {
-        vertexList = new Vertex[maxN]; // создание массива типа Vertex размером 10
-        mas = new int[maxN][maxN]; // инициализация смежного массива 10 на 10
+        vertexList = new Vertex[10]; // создание массива типа Vertex размером 10
+        mas = new int[10][10]; // инициализация смежного массива 10 на 10
+        stack = new myStack();
         curN = 0; // текущее значение
     }
 

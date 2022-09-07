@@ -3,10 +3,9 @@ package JavaTasks.Algoritms.G5_Graph.inDeep.Realization_1;
 public class myStack {
     private int index;
     private int array[];
-    private int size = 10;
 
     public myStack() { // создаём стек в виде массива, имеющий размер 10, и индексом -1 (т.е. пустой)
-        array = new int[size];
+        array = new int[10];
         index = -1;
     }
 
