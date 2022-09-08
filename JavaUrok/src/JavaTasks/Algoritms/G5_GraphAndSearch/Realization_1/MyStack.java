@@ -1,10 +1,10 @@
-package JavaTasks.Algoritms.G5_Graph.inDeep.Realization_1;
+package JavaTasks.Algoritms.G5_GraphAndSearch.Realization_1;
 
-public class myStack {
+public class MyStack {
     private int index;
     private int array[];
 
-    public myStack() { // создаём стек в виде массива, имеющий размер 10, и индексом -1 (т.е. пустой)
+    public MyStack() { // создаём стек в виде массива, имеющий размер 10, и индексом -1 (т.е. пустой)
         array = new int[10];
         index = -1;
     }

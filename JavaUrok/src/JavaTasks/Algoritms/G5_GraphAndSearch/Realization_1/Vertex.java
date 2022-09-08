@@ -1,4 +1,4 @@
-package JavaTasks.Algoritms.G5_Graph.inDeep.Realization_1;
+package JavaTasks.Algoritms.G5_GraphAndSearch.Realization_1;
 
 public class Vertex {
     private String name;

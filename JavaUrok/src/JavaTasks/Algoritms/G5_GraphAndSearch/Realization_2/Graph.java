@@ -1,4 +1,4 @@
-package JavaTasks.Algoritms.G5_Graph.inDeep.Realization_2;
+package JavaTasks.Algoritms.G5_GraphAndSearch.Realization_2;
 
 import java.util.Iterator;
 import java.util.LinkedList;
