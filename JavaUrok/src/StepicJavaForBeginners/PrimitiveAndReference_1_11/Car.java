@@ -4,16 +4,16 @@ package StepicJavaForBeginners.PrimitiveAndReference_1_11;
 public class Car {
     String color;
     String engine;
-    int countDoors;
+    int doorQuantity;
 
-    public Car(String color, String engine, int countDoors) {
+    public Car(String color, String engine, int doorQuantity) {
         this.color = color;
         this.engine = engine;
-        this.countDoors = countDoors;
+        this.doorQuantity = doorQuantity;
     }
 
-    void changeDoors(int count) {
-        this.countDoors = count;
+    void changeDoors(int quantity) {
+        this.doorQuantity = quantity;
     }
 
     static void changeColor(Car car1, Car car2) {
