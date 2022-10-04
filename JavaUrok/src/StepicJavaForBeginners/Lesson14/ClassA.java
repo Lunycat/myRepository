@@ -4,7 +4,7 @@ public class ClassA {
     static void time() {
         for (int hour = 0; hour < 6; hour++) {
             for (int minute = 0; minute < 60; minute++) {
-                if (hour > 1 && minute % 10 == 0) break;
+                if (hour > 1) break;
 
                 for (int second = 0; second < 60; second++) {
                     if (second * hour > minute) continue;
