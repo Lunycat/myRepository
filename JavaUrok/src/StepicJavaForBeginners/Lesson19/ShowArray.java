@@ -1,18 +1,26 @@
 package StepicJavaForBeginners.Lesson19;
 
 public class ShowArray {
-    static void showArray(int[][] array) {
-
+    static void showArray(String[][] array) {
+        System.out.print("{ ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("{");
+            for (int j = 0; j < array[i].length; j++) {
+                if (j == array[i].length - 1)
+                    System.out.print(array[i][j]);
+                else
+                    System.out.print(array[i][j] + ", ");
+            }
+            if (i == array.length - 1)
+                System.out.print("} ");
+            else
+                System.out.print("}, ");
+        }
+        System.out.println("}");
     }
 
     public static void main(String[] args) {
-        int[][] array = new int[3][3];
-
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = i + j;
-            }
-        }
+        String[][] array = {{"apple", "banana"}, {"red"}, {"silver", "gold"}};
 
         showArray(array);
     }
