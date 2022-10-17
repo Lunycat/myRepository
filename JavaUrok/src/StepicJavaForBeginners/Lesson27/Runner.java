@@ -1,4 +1,4 @@
-package StepicJavaForBeginners.Lesson26;
+package StepicJavaForBeginners.Lesson27;
 
 public class Runner {
     public static void main(String[] args) {
