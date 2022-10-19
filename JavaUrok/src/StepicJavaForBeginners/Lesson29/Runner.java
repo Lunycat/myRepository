@@ -41,68 +41,53 @@ public class Runner {
         animals.add(lev);
 
         for (Animal animal : animals) {
-            if (animal instanceof Swordfish) {
-
-                Swordfish s = (Swordfish) animal;
-                System.out.println(s.name);
-                s.eat();
-                s.sleep();
-                s.swim();
-                System.out.println();
-
-            } else if (animal instanceof Penguin) {
-
-                Penguin p = (Penguin) animal;
-                System.out.println(p.name);
-                p.eat();
-                p.sleep();
-                p.speak();
-                p.fly();
-                System.out.println();
-
-            } else if (animal instanceof Lev) {
-
-                Lev l = (Lev) animal;
-                System.out.println(l.name);
-                l.eat();
-                l.sleep();
-                l.speak();
-                l.run();
-                System.out.println();
-
+            switch (animal) {
+                case Swordfish s -> {
+                    System.out.println(s.name);
+                    s.eat();
+                    s.sleep();
+                    s.swim();
+                    System.out.println();
+                } case Penguin p -> {
+                    System.out.println(p.name);
+                    p.eat();
+                    p.sleep();
+                    p.speak();
+                    p.fly();
+                    System.out.println();
+                } case Lev l -> {
+                    System.out.println(l.name);
+                    l.eat();
+                    l.sleep();
+                    l.speak();
+                    l.run();
+                    System.out.println();
+                }
+                default -> System.out.println("Каво?");
             }
         }
 
         for (Speakable animal : speakables) {
-            if (animal instanceof Swordfish) {
-
-                Swordfish s = (Swordfish) animal;
+            if (animal instanceof Swordfish s) {
                 System.out.println(s.name);
                 s.eat();
                 s.sleep();
                 s.swim();
                 System.out.println();
-
-            } else if (animal instanceof Penguin) {
-
-                Penguin p = (Penguin) animal;
+            } else if (animal instanceof Penguin p) {
                 System.out.println(p.name);
                 p.eat();
                 p.sleep();
                 p.speak();
                 p.fly();
                 System.out.println();
-
-            } else if (animal instanceof Lev) {
-
-                Lev l = (Lev) animal;
+            } else if (animal instanceof Lev l) {
                 System.out.println(l.name);
                 l.eat();
                 l.sleep();
                 l.speak();
                 l.run();
                 System.out.println();
-
             }
         }
     }
