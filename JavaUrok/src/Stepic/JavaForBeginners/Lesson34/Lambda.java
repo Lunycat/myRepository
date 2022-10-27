@@ -19,9 +19,9 @@ public class Lambda {
         students.add(st5);
         students.add(st6);
 
-        Student.testStudent(students, (Student s) -> {return s.length > 180;});
+        Student.testStudent(students, (Student s) -> s.length > 180);
         System.out.println();
-        Student.testStudent(students, (Student s) -> {return s.age > 24;});
+        Student.testStudent(students, (Student s) -> s.age > 24);
     }
 }
 
