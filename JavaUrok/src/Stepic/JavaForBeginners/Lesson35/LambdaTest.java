@@ -11,6 +11,22 @@ public class LambdaTest {
         for (Human h : humans) {
             System.out.println(h.name);
         }
+        System.out.println();
+
+        Predicate<Human> isName = human -> human.name.equals("Олег");
+        Supplier<Human> getHuman = () -> new Human("Евгений", 40);
+        Consumer<Human> setNameAndPrint = human ->
+        {
+            human.name = "Егор";
+            System.out.println("Теперь его имя: " + human.name);
+        };
+
+        Human human1 = new Human("Олег", 35);
+        Human human2 = getHuman.get();
+
+        System.out.println(isName.test(human1));
+        System.out.println("Имя: " + human2.name + ". Возраст: " + human2.age);
+        setNameAndPrint.accept(human2);
     }
 }
 
