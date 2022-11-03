@@ -7,22 +7,22 @@ import java.util.Scanner;
 public class ListIteratorTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        palindrome(scanner.nextLine());
+        printPalindrome(scanner.nextLine());
     }
 
-    static void palindrome(String s) {
+    static void printPalindrome(String str) {
         boolean isPalindrome = true;
         ArrayList<Character> list = new ArrayList<>();
 
-        for (char ch : s.toCharArray()) {
+        for (char ch : str.toCharArray()) {
             list.add(ch);
         }
 
-        ListIterator<Character> iterator = list.listIterator();
-        ListIterator<Character> reverseIterator = list.listIterator(list.size());
+        ListIterator<Character> iteratorNext = list.listIterator();
+        ListIterator<Character> iteratorReverse = list.listIterator(list.size());
 
-        while (iterator.hasNext() && reverseIterator.hasPrevious()) {
-            if (!iterator.next().equals(reverseIterator.previous())) {
+        while (iteratorNext.hasNext() && iteratorReverse.hasPrevious()) {
+            if (!iteratorNext.next().equals(iteratorReverse.previous())) {
                 isPalindrome = false;
                 break;
             }

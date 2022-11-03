@@ -6,7 +6,8 @@ public class Main {
     }
     // A->U; C->G; G->C; T->A
     public static String dnaToRna(String str) {
-        if (str.equals("")) return str;
+        if (str.equals(""))
+            return str;
         // Создаём массив для просмотра каждоый буквы.
         String[] array = str.split("");
         // В переменную result будет записан результат.
