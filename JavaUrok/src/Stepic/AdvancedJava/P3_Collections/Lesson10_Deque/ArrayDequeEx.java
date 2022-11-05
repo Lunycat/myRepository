@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson10_Deque;
+package Stepic.AdvancedJava.P3_Collections.Lesson10_Deque;
 
 import java.util.ArrayDeque;
 

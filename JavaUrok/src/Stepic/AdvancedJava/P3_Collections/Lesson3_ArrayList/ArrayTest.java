@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson3_ArrayList;
+package Stepic.AdvancedJava.P3_Collections.Lesson3_ArrayList;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson1_ComparableAndComparator;
+package Stepic.AdvancedJava.P1_ComparableAndComparator.Lesson1;
 
 import java.util.ArrayList;
 import java.util.Collections;

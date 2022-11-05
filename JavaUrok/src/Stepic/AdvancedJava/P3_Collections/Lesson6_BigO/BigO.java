@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson6_BigO;
+package Stepic.AdvancedJava.P3_Collections.Lesson6_BigO;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

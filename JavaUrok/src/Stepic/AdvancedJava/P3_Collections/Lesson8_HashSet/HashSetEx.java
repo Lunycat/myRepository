@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson8_HashSet;
+package Stepic.AdvancedJava.P3_Collections.Lesson8_HashSet;
 
 import java.util.HashSet;
 import java.util.Set;

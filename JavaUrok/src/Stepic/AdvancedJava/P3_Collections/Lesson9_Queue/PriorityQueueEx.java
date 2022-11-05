@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson9_Queue;
+package Stepic.AdvancedJava.P3_Collections.Lesson9_Queue;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

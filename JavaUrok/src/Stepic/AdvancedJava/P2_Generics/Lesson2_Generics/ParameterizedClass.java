@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson2_Generics;
+package Stepic.AdvancedJava.P2_Generics.Lesson2_Generics;
 
 public class ParameterizedClass {
     public static void main(String[] args) {

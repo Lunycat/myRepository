@@ -1,6 +1,4 @@
-package Stepic.AdvancedJava.Lesson7_HashCode;
-
-import Stepic.JavaForBeginners.Lesson10.p1.p4.D;
+package Stepic.AdvancedJava.P3_Collections.Lesson7_HashCode;
 
 import java.util.HashMap;
 import java.util.Map;

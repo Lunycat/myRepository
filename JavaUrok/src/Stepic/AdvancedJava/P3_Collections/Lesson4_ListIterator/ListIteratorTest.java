@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.Lesson4_ListIterator;
+package Stepic.AdvancedJava.P3_Collections.Lesson4_ListIterator;
 
 import java.util.ArrayList;
 import java.util.ListIterator;
