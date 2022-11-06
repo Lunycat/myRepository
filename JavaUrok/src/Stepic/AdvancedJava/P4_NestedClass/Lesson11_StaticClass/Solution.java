@@ -5,6 +5,8 @@ public class Solution {
         Car.Engine engine = new Car.Engine(200);
         Car car = new Car("Зелёная", 4, engine);
         System.out.println(car);
+
+
     }
 }
 
@@ -12,6 +14,7 @@ class Car {
     String color;
     int doorCount;
     Engine engine;
+    static int a;
 
     public Car(String color, int doorCount, Engine engine) {
         this.color = color;
