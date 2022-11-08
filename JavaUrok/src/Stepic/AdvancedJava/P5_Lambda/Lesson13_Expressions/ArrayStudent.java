@@ -24,17 +24,7 @@ public class ArrayStudent {
         }
     }
 
-    void checkStudentsAge(Predicate<Student> predicate) {
-        for (Student s : students) {
-            if (s == null)
-                break;
-
-            if (predicate.test(s))
-                System.out.println(s);
-        }
-    }
-
-    void checkStudentsName(Predicate<Student> predicate) {
+    void forEachCheck(Predicate<Student> predicate) {
         for (Student s : students) {
             if (s == null)
                 break;

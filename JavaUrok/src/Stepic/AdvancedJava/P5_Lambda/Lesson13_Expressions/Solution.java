@@ -12,10 +12,6 @@ public class Solution {
 
         System.out.println();
 
-        arrayStudent.checkStudentsAge(student -> student.age > 20);
-
-        System.out.println();
-
-        arrayStudent.checkStudentsName(student -> student.name.startsWith("С"));
+        arrayStudent.forEachCheck(student -> student.name.startsWith("С") && student.age > 20);
     }
 }
