@@ -1,9 +1,5 @@
 package Stepic.AdvancedJava.P5_Lambda.Lesson13_Expressions;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class Student {
+class Student {
     String name;
     int age;
     double estimation;
