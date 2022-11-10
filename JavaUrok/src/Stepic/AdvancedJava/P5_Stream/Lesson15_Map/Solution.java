@@ -7,13 +7,13 @@ import java.util.stream.Collectors;
 
 public class Solution {
     public static void main(String[] args) {
-        List<Integer> listMap = new ArrayList<>(Arrays.asList(3, 4, 1, 7, 10, 31, 2, 6));
+        List<String> stringList = new ArrayList<>(Arrays.asList("Раз", "Два", "Привет", "Пока", "Чебурек", "Чебурек"));
+        List<Integer> integerList = stringList.stream()
+                .distinct()
+                .map(String::length)
+                .filter(i -> i > 3)
+                .collect(Collectors.toList());
 
-        List<Integer> listInt = listMap.stream().map(i -> {
-            if (i % 3 == 0)
-                i = i/3;
-            return i;
-        }).collect(Collectors.toList());
-        listInt.forEach(e -> System.out.println(e));
+        integerList.forEach(System.out::println);
     }
 }
