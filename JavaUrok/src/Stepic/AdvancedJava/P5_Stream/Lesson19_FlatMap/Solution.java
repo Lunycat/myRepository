@@ -13,8 +13,11 @@ public class Solution {
         facultyList.add(f2);
 
         facultyList.stream()
-                .flatMap(faculty -> faculty.listOfFaculty.stream())
+                .flatMap(faculty -> faculty.getListOfFaculty().stream())
                 .forEach(System.out::println);
+
+        System.out.println(f1.getName());
+        System.out.println(f2.getName());
     }
 }
 
@@ -40,12 +43,16 @@ class Student {
 }
 
 class Faculty {
-    List<Student> listOfFaculty;
-    String name;
+    final private List<Student> listOfFaculty;
+    final private String name;
 
     public Faculty(String name) {
         this.name = name;
         listOfFaculty = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
     }
 
     public List<Student> getListOfFaculty() {
