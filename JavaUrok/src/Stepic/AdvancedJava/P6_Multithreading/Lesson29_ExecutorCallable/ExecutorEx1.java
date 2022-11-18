@@ -3,7 +3,7 @@ package Stepic.AdvancedJava.P6_Multithreading.Lesson29_ExecutorCallable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ExecutorEX1 {
+public class ExecutorEx1 {
     public static void main(String[] args) {
         ExecutorService es = Executors.newFixedThreadPool(3);
         es.execute(new MyRunnable());
