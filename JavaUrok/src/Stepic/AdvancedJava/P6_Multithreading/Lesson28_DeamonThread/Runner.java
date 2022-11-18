@@ -6,7 +6,6 @@ public class Runner {
         Thread1 thread2 = new Thread1();
         Thread1 thread3 = new Thread1();
         Thread.sleep(200);
-
     }
 }
 
