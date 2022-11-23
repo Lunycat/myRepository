@@ -11,7 +11,7 @@ public class Ex3 {
         UserList users;
 
         try (ObjectInputStream inputStream = new ObjectInputStream(
-                new FileInputStream("C:\\Users\\xolms\\OneDrive\\Рабочий стол\\Источник.bat"))) {
+                new FileInputStream("C:\\Users\\Артём\\Desktop\\Источник.txt"))) {
             users = (UserList) inputStream.readObject();
             users.print();
         } catch (IOException | ClassNotFoundException e) {

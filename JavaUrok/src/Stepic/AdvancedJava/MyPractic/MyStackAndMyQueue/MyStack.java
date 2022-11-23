@@ -1,4 +1,4 @@
-package Stepic.AdvancedJava.MyPractic;
+package Stepic.AdvancedJava.MyPractic.MyStackAndMyQueue;
 
 public class MyStack {
     int[] stack;
@@ -19,17 +19,19 @@ public class MyStack {
     }
 
     public int pop() {
-        return stack[tail - 1];
+        int element = stack[tail-1];
+        stack[tail-- -1] = 0;
+        return element;
     }
 
     public void print() {
         System.out.print("[");
         for (int i = 0; i < size; i++) {
+            if (stack[i + 1] == 0) {
+                System.out.print(stack[i]);
+                break;
+            }
              System.out.print(stack[i]+", ");
-             if (stack[i + 1] == 0) {
-                 System.out.print(stack[i]);
-                 break;
-             }
         }
         System.out.println("]");
     }

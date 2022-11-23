@@ -15,7 +15,7 @@ public class Ex3 {
         users.add(user3);
 
         try (ObjectOutputStream outputStream = new ObjectOutputStream(
-                new FileOutputStream("C:\\Users\\xolms\\OneDrive\\Рабочий стол\\Источник.bat"))) {
+                new FileOutputStream("C:\\Users\\Артём\\Desktop\\Источник.txt"))) {
             outputStream.writeObject(users);
             System.out.println("Done");
         } catch (IOException e) {
