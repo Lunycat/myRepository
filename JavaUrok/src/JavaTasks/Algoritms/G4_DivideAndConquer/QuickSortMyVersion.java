@@ -17,8 +17,10 @@ public class QuickSortMyVersion {
         int pivot = array[(leftMarker + rightMarker) / 2];
 
         while (leftMarker < rightMarker) {
-            while (array[leftMarker] < pivot) leftMarker++;
-            while (array[rightMarker] > pivot) rightMarker--;
+            while (array[leftMarker] < pivot)
+                leftMarker++;
+            while (array[rightMarker] > pivot)
+                rightMarker--;
             if (leftMarker <= rightMarker) {
                 if (leftMarker < rightMarker) {
                     int tmp = array[leftMarker];

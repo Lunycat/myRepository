@@ -5,8 +5,10 @@ import java.util.Arrays;
 public class ExponentialSearch {
     public static int exponentialSearch(int[] array, int elementToSearch) {
 
-        if (array[0] == elementToSearch) return elementToSearch;
-        if (array[array.length - 1] == elementToSearch) return array.length;
+        if (array[0] == elementToSearch)
+            return elementToSearch;
+        if (array[array.length - 1] == elementToSearch)
+            return array.length;
 
         int range = 1;
 

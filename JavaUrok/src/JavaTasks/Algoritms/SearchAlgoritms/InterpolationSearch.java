@@ -11,7 +11,7 @@ public class InterpolationSearch {
                 (elementToSearch <= array[lastIndex])) {
             // используем формулу интерполяции для поиска возможной лучшей позиции для существующего элемента
             int pos = startIndex + (((lastIndex-startIndex) /
-                    (array[lastIndex]-array[startIndex]))*
+                    (array[lastIndex] - array[startIndex]))*
                     (elementToSearch - array[startIndex]));
 
             if (array[pos] == elementToSearch) {
