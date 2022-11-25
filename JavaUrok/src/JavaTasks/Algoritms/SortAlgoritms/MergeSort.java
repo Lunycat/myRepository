@@ -5,10 +5,11 @@ import java.util.Arrays;
 public class MergeSort {
     public static void main(String[] args) {
         int[] array = {32, 40, 10, 8, 12, 33, 43, 35};
-        System.out.println(Arrays.toString(mergeSort(array)));
+        mergeSort(array);
+        System.out.println(Arrays.toString(array));
     }
 
-    static int[] mergeSort(int[] array) {
+    static void mergeSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int tmp = array[i];
             int marker = i;
@@ -17,6 +18,5 @@ public class MergeSort {
             }
             array[marker] = tmp;
         }
-        return array;
     }
 }

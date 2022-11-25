@@ -2,7 +2,7 @@ package JavaTasks.Algoritms.SortAlgoritms;
 
 import java.util.Arrays;
 
-public class BinarySort {
+public class QuickSort {
     public static void main(String[] args) {
         int[] array = {32, 40, 10, 8, 12, 33, 43, 35};
         quickSort(array);
@@ -20,7 +20,7 @@ public class BinarySort {
         while (leftMarker < rightMarker) {
             while (array[leftMarker] < pivot)
                 leftMarker++;
-            while (array[rightMarker] > pivot )
+            while (array[rightMarker] > pivot)
                 rightMarker--;
             if (leftMarker <= rightMarker) {
                 if (leftMarker < rightMarker) {
