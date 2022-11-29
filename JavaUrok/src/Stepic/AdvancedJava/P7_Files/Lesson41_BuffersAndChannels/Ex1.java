@@ -14,6 +14,7 @@ public class Ex1 {
              FileChannel channelRead = file1.getChannel();
              FileChannel channelWrite = file2.getChannel())
         {
+<<<<<<< HEAD
             StringBuilder stih = new StringBuilder();
             ByteBuffer bufferRead = ByteBuffer.allocate(20);
             int countReadBuffer = 1;
@@ -25,6 +26,20 @@ public class Ex1 {
                     stih.append((char) bufferRead.get());
                 }
                 bufferRead.clear();
+=======
+            ByteBuffer buffer = ByteBuffer.allocate(20);
+            StringBuilder stih = new StringBuilder();
+            int byteRead = 1;
+            while (byteRead > 0) {
+                byteRead = channel.read(buffer);
+                System.out.println("Read: " + (char)byteRead);
+                buffer.flip();
+                while (buffer.hasRemaining()) {
+                    stih.append(buffer.get());
+                    System.out.println(stih);
+                }
+                buffer.clear();
+>>>>>>> 0fcb2fd2 (update Lesson41)
             }
             System.out.println("----------------------------------------------------------------");
             System.out.println(stih);
