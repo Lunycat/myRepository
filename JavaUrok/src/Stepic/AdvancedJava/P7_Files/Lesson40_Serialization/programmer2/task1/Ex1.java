@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ex2 {
+public class Ex1 {
     public static void main(String[] args) {
         List<String> employees;
         try (ObjectInputStream reader = new ObjectInputStream(

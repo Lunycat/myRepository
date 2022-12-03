@@ -3,7 +3,7 @@ package Stepic.AdvancedJava.P7_Files.Lesson40_Serialization.programmer1.task2;
 import java.io.Serializable;
 
 public class Employee implements Serializable {
-    private final long serialVersionUID = 1;
+    private static final long serialVersionUID = 1;
     private String name;
     private int age;
     private float salary;
